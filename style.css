@@ -1,0 +1,142 @@
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Linear gradient background */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+/* Animation for the gradient background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.todo-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Date-time display */
+.date-time {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Input and button styles */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #5cb85c;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* To-Do list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li span {
+    font-weight: bold;
+}
+
+button.icon-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.icon-btn i {
+    font-size: 20px;
+    color: #5cb85c;
+}
+
+button.icon-btn:hover i {
+    color: #4cae4c;
+}
+
+/* Delete X button styling */
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn i {
+    font-size: 20px;
+    color: #d9534f;
+}
+
+.delete-btn:hover i {
+    color: #c9302c;
+}
+
+.edit-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn i {
+    font-size: 20px;
+    color: #5bc0de;
+}
+
+.edit-btn:hover i {
+    color: #31b0d5;
+}
+
+.time-display {
+    font-size: 14px;
+    color: #666;
+}
